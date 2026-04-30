@@ -51,7 +51,7 @@
       overflow: hidden;
       background:
         linear-gradient(90deg, rgba(8, 9, 11, 0.92), rgba(8, 9, 11, 0.72) 46%, rgba(8, 9, 11, 0.38)),
-        url("./assets/alpha-ai.png");
+        url("./assets/alpha-ai-web.jpg");
       background-position: center;
       background-size: cover;
       position: relative;
@@ -174,6 +174,15 @@
 
     .hero-content {
       width: min(780px, 100%);
+    }
+
+    .hero-logo-mobile {
+      display: none;
+      width: min(280px, 72vw);
+      margin: 0 auto 28px;
+      border: 1px solid rgba(241, 193, 92, 0.3);
+      border-radius: 8px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
     }
 
     .eyebrow {
@@ -895,13 +904,17 @@
       .site-shell {
         background:
           linear-gradient(180deg, rgba(8, 9, 11, 0.68), rgba(8, 9, 11, 0.94) 64%),
-          url("./assets/alpha-ai.png");
+          url("./assets/alpha-ai-web.jpg");
         background-position: center top;
       }
 
       .hero {
         min-height: 94vh;
         align-content: end;
+      }
+
+      .hero-logo-mobile {
+        display: block;
       }
 
       .stats,
@@ -952,6 +965,11 @@
         padding: 118px 18px 48px;
       }
 
+      .hero-logo-mobile {
+        width: min(230px, 78vw);
+        margin-bottom: 24px;
+      }
+
       h1 {
         font-size: clamp(3rem, 18vw, 4.8rem);
       }
@@ -999,7 +1017,7 @@
   <div class="site-shell" id="top">
     <header class="nav reveal from-bottom" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="ALPHA.AI home">
-        <img src="./assets/alpha-ai.png" alt="ALPHA.AI Web Developing logo">
+        <img src="./assets/alpha-ai-web.jpg" alt="ALPHA.AI Web Developing logo">
         <span>ALPHA.AI</span>
       </a>
       <nav class="nav-links" aria-label="Page links">
@@ -1013,6 +1031,7 @@
 
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
+        <img class="hero-logo-mobile reveal from-back" src="./assets/alpha-ai-web.jpg" alt="ALPHA.AI Web Developing logo">
         <div class="eyebrow reveal from-left">Professional Web Developer</div>
         <h1 id="hero-title" class="reveal from-left delay-1">
           <span class="hero-title-line">ALPHA<span class="hero-title-mark">.AI</span></span><br>
@@ -1092,7 +1111,7 @@
     <section id="about" class="about">
       <div class="section-inner about-layout">
         <div class="logo-showcase reveal from-left">
-          <img src="./assets/alpha-ai.png" alt="Gold and silver ALPHA.AI logo on a dark background">
+          <img src="./assets/alpha-ai-web.jpg" alt="Gold and silver ALPHA.AI logo on a dark background">
         </div>
         <div class="about-copy">
           <div class="eyebrow reveal from-right">About Me</div>
